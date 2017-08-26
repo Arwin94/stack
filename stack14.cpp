@@ -16,7 +16,7 @@ Node* newnode(int x)
     p->next=NULL;
     return(p);
 }
- 
+/// push operation 
 void push(Node *q)
 {
     if(top==NULL)
@@ -27,7 +27,7 @@ void push(Node *q)
         top=q;
     }
 }
- 
+/// pop operation
 void pop(){
     if(top==NULL){
         cout<<"Stack is empty!!";
@@ -39,7 +39,7 @@ void pop(){
         delete(p);
     }
 }
- 
+ /// display stack
 void showstack()
 {
     Node *q;
